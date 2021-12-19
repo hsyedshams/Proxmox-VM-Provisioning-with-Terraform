@@ -10,3 +10,13 @@ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.rel
 sudo apt update
 
 sudo apt install terraform
+
+Terraform commands:
+
+terraform validate  # To check config file error
+
+terraform init
+
+terraform apply
+
+TF_LOG=DEBUG terraform apply     # In debug mode
