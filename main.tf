@@ -10,7 +10,7 @@ terraform {
 
 provider "proxmox" {
   # url is the hostname (FQDN if you have one) for the proxmox host you'd like to connect to to issue the commands. my proxmox host is 'prox-1u'. Add /api2/json at the end for the API
-  pm_api_url = "https://192.168.0.250:8006/api2/json"
+  pm_api_url = "https://IP of Proxmox:8006/api2/json"
   # api token id is in the form of: <username>@pam!<tokenId>
   pm_api_token_id = "blog_example@pam!new_token_id"
   # this is the full secret wrapped in quotes. don't worry, I've already deleted this from my proxmox cluster by the time you read this post
